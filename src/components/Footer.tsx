@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { Separator } from "@/components/ui/separator";
-import { Facebook, Instagram, Twitter, Phone, Mail, MapPin } from "lucide-react";
+import Link from "next/link"
+import { Separator } from "@/components/ui/separator"
+import { Facebook, Instagram, Twitter, Phone, Mail, MapPin } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -33,33 +33,31 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
           <ul className="space-y-2 text-emerald-100">
-            <ul className="space-y-2 text-emerald-100">
-              <li className="flex items-center gap-2">
-                <Phone size={16} />
-                <a href="tel:+919850080303" className="hover:text-white transition">
-                  +91 98500 80303
-                </a>
-              </li>
-              <li className="flex items-center gap-2">
-                <Mail size={16} />
-                <a href="mailto:admin@metropestcontrol.in" className="hover:text-white transition">
-                  admin@metropestcontrol.in
-                </a>
-              </li>
-              <li className="flex items-center gap-2">
-                <MapPin size={16} />
-                <a
-                  href="https://www.google.com/maps/search/Rajarampuri,+10th+Lane,+Kolhapur,+Maharashtra"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition"
-                >
-                  Rajarampuri, 10th Lane, Kolhapur, Maharashtra
-                </a>
-              </li>
-            </ul>
-
+            <li className="flex items-center gap-2">
+              <Phone size={16} />
+              <a href="tel:+919850080303" className="hover:text-white transition">
+                +91 98500 80303
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <Mail size={16} />
+              <a href="mailto:admin@metropestcontrol.in" className="hover:text-white transition">
+                admin@metropestcontrol.in
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <MapPin size={16} />
+              <a
+                href="https://www.google.com/maps/search/Rajarampuri,+10th+Lane,+Kolhapur,+Maharashtra"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition"
+              >
+                Rajarampuri, 10th Lane, Kolhapur, Maharashtra
+              </a>
+            </li>
           </ul>
+
           <div className="flex gap-4 mt-4">
             <Link href="#" className="hover:text-white"><Facebook size={18} /></Link>
             <Link href="#" className="hover:text-white"><Instagram size={18} /></Link>
@@ -73,5 +71,5 @@ export default function Footer() {
         © {new Date().getFullYear()} Metro Pest Control. All rights reserved.
       </div>
     </footer>
-  );
+  )
 }
