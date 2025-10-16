@@ -1,17 +1,17 @@
 "use client"
 
 import Image from "next/image"
-import { motion } from "framer-motion"
-import { cn } from "@/lib/utils"
 import { Separator } from "@/components/ui/separator"
+import { cn } from "@/lib/utils"
 
 const galleryImages = [
   { src: "/gallery/pest-spray.jpg", alt: "Technician spraying pest control" },
   { src: "/gallery/termite-treatment.jpg", alt: "Termite control service" },
   { src: "/gallery/home-sanitization.jpg", alt: "Home sanitization service" },
   { src: "/gallery/office-disinfection.jpg", alt: "Office disinfection service" },
-  { src: "/gallery/equipments.jpg", alt: "Professional pest control equipment" },
   { src: "/gallery/eco-friendly.jpg", alt: "Eco-friendly pest control products" },
+  { src: "/gallery/equipments.jpg", alt: "Professional pest control equipment" },
+
 ]
 
 export default function GallerySection() {
@@ -19,73 +19,39 @@ export default function GallerySection() {
     <section className="py-32 bg-gradient-to-b from-emerald-50 to-white overflow-hidden">
       <div className="container mx-auto px-6 text-center">
         {/* Title */}
-        <motion.h1
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-emerald-800 mb-4"
-        >
+        <h1 className="text-4xl md:text-5xl font-bold text-emerald-800 mb-4">
           Our Work
-        </motion.h1>
+        </h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="text-emerald-700 max-w-2xl mx-auto mb-14 text-lg leading-relaxed"
-        >
-          Experience the precision, care, and professionalism behind every pest-free space we create.
-          From homes to hotels, every project reflects our dedication to hygiene and safety.
-        </motion.p>
+        <p className="text-emerald-700 max-w-2xl mx-auto mb-14 text-lg leading-relaxed">
+          A glimpse of our professional pest control services — homes, hotels, and offices kept safe and pest-free with eco-friendly methods.
+        </p>
 
         <Separator className="mx-auto max-w-[180px] bg-emerald-300 mb-16" />
 
-        {/* Gallery Grid */}
-        <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
+        {/* Staggered Gallery */}
+        <div className="grid gap-20 sm:grid-cols-2 md:grid-cols-2 auto-rows-fr">
           {galleryImages.map((img, i) => (
-            <motion.div
+            <div
               key={img.src}
-              initial={{ opacity: 0, scale: 0.95, y: 30 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{
-                type: "spring",
-                stiffness: 120,
-                damping: 15,
-                delay: i * 0.07,
-              }}
-              viewport={{ once: true }}
-              whileHover={{
-                scale: 1.03,
-                transition: { type: "spring", stiffness: 300, damping: 15 },
-              }}
               className={cn(
-                "relative overflow-hidden rounded-3xl group shadow-sm border border-emerald-100",
-                "hover:shadow-lg hover:shadow-emerald-100/60 transition-all duration-300"
+                "relative overflow-hidden rounded-3xl shadow-md border border-emerald-100",
+                i % 2 === 0 ? "mt-0" : "mt-16",
+                "hover:scale-105 transition-transform duration-300 ease-out"
               )}
             >
               <Image
                 src={img.src}
                 alt={img.alt}
-                width={400}
-                height={400}
-                className="object-cover w-full aspect-[4/3] group-hover:scale-105 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                width={200}
+                height={200}
+                className="object-cover w-full rounded-3xl"
               />
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/70 via-emerald-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400 ease-out" />
-              <div className="absolute bottom-5 left-0 right-0 flex justify-center">
-                <motion.span
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.08 + 0.2, duration: 0.5, ease: "easeOut" }}
-                  viewport={{ once: true }}
-                  className="text-white font-semibold text-lg bg-emerald-800/80 px-5 py-2 rounded-xl backdrop-blur-sm shadow-md"
-                >
-                  {img.alt}
-                </motion.span>
+              {/* Always visible caption */}
+              <div className="absolute bottom-0 left-0 right-0 bg-emerald-800/80 text-white text-lg font-semibold px-4 py-2 backdrop-blur-sm">
+                {img.alt}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
