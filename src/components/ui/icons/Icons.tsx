@@ -1,5 +1,5 @@
 // Prop Types
-import { SVGProps } from "react"
+import { JSX, SVGProps } from "react"
 
 /**
  * TriangleDown icon component.
