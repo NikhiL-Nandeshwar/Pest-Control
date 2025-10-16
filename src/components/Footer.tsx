@@ -33,10 +33,10 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
           <ul className="space-y-2 text-emerald-100">
             <li className="flex items-center gap-2">
-              <Phone size={16} /> +91 98765 43210
+              <Phone size={16} /> +91 98500 80303
             </li>
             <li className="flex items-center gap-2">
-              <Mail size={16} /> support@pestcontrolpro.in
+              <Mail size={16} /> admin@metropestcontrol.in
             </li>
           </ul>
           <div className="flex gap-4 mt-4">
