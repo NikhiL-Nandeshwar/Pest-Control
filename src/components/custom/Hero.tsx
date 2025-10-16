@@ -19,7 +19,7 @@ export default function Hero() {
           className="md:max-w-xl space-y-6 z-10"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-emerald-900 leading-tight">
-            Safe. Effective.<br /> Reliable <br />
+            Safe. Effective.<br /> Reliable. <br />
             <span className="text-emerald-600">Pest Control Solutions</span>
           </h1>
           <p className="text-emerald-700 text-lg leading-relaxed">
