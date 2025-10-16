@@ -5,6 +5,7 @@ import { Building2, Home, Hotel, MapPin } from "lucide-react"
 import Image from "next/image"
 import { Separator } from "@/components/ui/separator"
 
+// About us section
 export default function AboutSection() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-white via-emerald-50 to-white py-24">
@@ -26,14 +27,14 @@ export default function AboutSection() {
 
             <p className="text-emerald-700 text-lg mb-6 leading-relaxed">
               We are a professional pest control company operating across{" "}
-              <span className="font-semibold">Maharashtra, Goa, and Karnataka</span>, 
-              delivering safe and effective pest management solutions for homes, 
+              <span className="font-semibold">Maharashtra, Goa, and Karnataka</span>,
+              delivering safe and effective pest management solutions for homes,
               hotels, offices, and industries.
             </p>
 
             <p className="text-emerald-700 text-lg mb-8 leading-relaxed">
-              Our mission is simple — to create healthier, pest-free environments using 
-              eco-friendly products and trained technicians. With a focus on safety, hygiene, 
+              Our mission is simple — to create healthier, pest-free environments using
+              eco-friendly products and trained technicians. With a focus on safety, hygiene,
               and customer satisfaction, we continue to expand across India.
             </p>
 
