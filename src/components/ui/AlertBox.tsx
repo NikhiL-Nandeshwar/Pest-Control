@@ -6,6 +6,7 @@ import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 
 // Utils
 import { cn } from "@/lib/utils";
+import { JSX } from "react";
 
 /**
  * Props for the AlertBox component.

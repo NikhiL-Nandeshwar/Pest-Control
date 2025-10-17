@@ -54,8 +54,8 @@ export default function Hero() {
           <Image
             src="/gallery/eco-friendly.jpg"
             alt="Professional pest control illustration"
-            width={500}
-            height={500}
+            width={650}
+            height={650}
             className="relative z-10 drop-shadow-2xl"
             priority
           />
