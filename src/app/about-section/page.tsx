@@ -21,11 +21,11 @@ export default function AboutSection() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-emerald-800 mb-6 leading-tight">
-              About <span className="text-emerald-600">Metro Pest Control</span>
+              About <span className="text-emerald-600">Metro Pest Management</span>
             </h2>
 
             <p className="text-emerald-700 text-lg mb-6 leading-relaxed">
-              We are a professional pest control company operating across{" "}
+              We are a professional pest management company operating across{" "}
               <span className="font-semibold">Maharashtra, Goa, and Karnataka</span>, 
               delivering safe and effective pest management solutions for homes, 
               hotels, offices, and industries.

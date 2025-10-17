@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container mx-auto px-6 py-10 grid gap-8 md:grid-cols-3">
         {/* Company Info */}
         <div>
-          <h2 className="text-2xl font-bold mb-3">Metro Pest Control</h2>
+          <h2 className="text-2xl font-bold mb-3">Metro Pest Management</h2>
           <p className="text-sm text-emerald-100 leading-relaxed">
             Your trusted partner in eco-friendly pest control.
             We protect your home and business with safe, effective, and reliable solutions.
@@ -41,8 +41,8 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Mail size={16} />
-              <a href="mailto:admin@metropestcontrol.in" className="hover:text-white transition">
-                admin@metropestcontrol.in
+              <a href="mailto:admin@metropestmanagement.in" className="hover:text-white transition">
+                admin@metropestmanagement.in
               </a>
             </li>
             <li className="flex items-center gap-2">

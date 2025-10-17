@@ -39,9 +39,18 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex justify-between items-center py-2 px-6">
         {/* Logo */}
-        <Link href="/" className="flex flex-col items-start">
-          <span className="font-raleway text-xl text-emerald-700 font-bold">METRO</span>
-          <span className="text-sm text-emerald-700 -mt-1">Pest Control</span>
+        <Link href="/" className="flex items-center gap-1">
+          <div className="relative w-10 h-10">
+            <img
+              src="/logo/logo_metro.png"
+              alt="Metro Pest Control Logo"
+              className="object-contain"
+            />
+          </div>
+          <div className="flex flex-col leading-tight">
+            <span className="font-raleway text-xl text-emerald-700 font-bold">METRO</span>
+            <span className="text-sm text-emerald-700 -mt-1">Pest Management</span>
+          </div>
         </Link>
 
         {/* Desktop Menu */}

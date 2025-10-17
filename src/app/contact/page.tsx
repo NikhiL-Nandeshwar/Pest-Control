@@ -47,7 +47,7 @@ export default function ContactPage() {
                 <Mail className="text-emerald-600" />
                 <div>
                   <h4 className="font-semibold text-emerald-700">Email</h4>
-                  <p className="text-gray-600">admin@metropestcontrol.in</p>
+                  <p className="text-gray-600">admin@metropestmanagement.in</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -62,7 +62,7 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-semibold text-emerald-700">Address</h4>
                   <p className="text-gray-600">
-                    Metro Pest Control, Rajarampuri 10th Lane, Kolhapur, Maharashtra
+                    Metro Pest Management, Rajarampuri 10th Lane, Kolhapur, Maharashtra
                   </p>
                 </div>
               </div>
