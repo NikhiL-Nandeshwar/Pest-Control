@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem } from "@/components/ui/navigation-menu";
 import { Menu, X } from "lucide-react";
 
+// Navbar Component
 export default function Navbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
