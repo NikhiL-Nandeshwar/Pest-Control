@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container mx-auto px-6 py-10 grid gap-8 md:grid-cols-3">
         {/* Company Info */}
         <div>
-          <h2 className="text-2xl font-bold mb-3">Metro Pest Management</h2>
+          <h2 className="text-lg font-semibold mb-3">Metro Pest Management</h2>
           <p className="text-sm text-emerald-100 leading-relaxed">
             Your trusted partner in eco-friendly pest control.
             We protect your home and business with safe, effective, and reliable solutions.
@@ -67,8 +67,21 @@ export default function Footer() {
       </div>
 
       <Separator className="bg-emerald-600" />
-      <div className="text-center py-4 text-sm text-emerald-100">
-        © {new Date().getFullYear()} Metro Pest Control. All rights reserved.
+      
+      <div className="text-center pt-2 pb-0.5 text-sm text-emerald-100">
+        © {new Date().getFullYear()} Metro Pest Management. All rights reserved.
+      </div>
+
+      <div className="text-center pb-2 text-sm text-emerald-100">
+        Managed by{" "}
+        <a
+          href="https://nexspire.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-white transition"
+        >
+          NexSpire Technologies
+        </a>
       </div>
     </footer>
   )
