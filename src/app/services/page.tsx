@@ -10,7 +10,7 @@ const services = [
   {
     title: "Termite Control",
     description:
-      "Protect your home’s foundation, furniture, and wooden structures from costly termite damage. Our team uses advanced, eco-safe solutions that eliminate termite colonies and prevent recurrence.",
+      "Protect the foundation, furniture, and wooden structures from costly termite damage. Our team uses advanced, eco-safe solutions that eliminate termite colonies and prevent recurrence.",
     image: "/services/termite.jpg",
   },
   {
@@ -60,7 +60,7 @@ export default function ServicesPage() {
             className="text-emerald-700 text-lg max-w-2xl mx-auto"
           >
             We provide comprehensive pest control solutions designed to safeguard your
-            home, office, and business with advanced, eco-friendly methods.
+            hotels, hospitals, and industries with advanced, professional methods.
           </motion.p>
         </div>
       </div>
@@ -124,13 +124,13 @@ export default function ServicesPage() {
           Protect Your Property — Start Today
         </h2>
         <p className="text-emerald-600 mb-8 max-w-2xl mx-auto">
-          From small homes to large hotels, we have custom pest control plans for every space.
+          From hotels, hospitals to large industries, we have custom pest control plans for every space and needs.
         </p>
         <Link
           href="/contact"
           className="bg-white border border-emerald-500 text-emerald-800 font-semibold px-8 py-3 rounded-full hover:bg-emerald-50 transition-all"
         >
-          Get a Free Inspection
+          Let's Get in Touch
         </Link>
       </motion.div>
     </section>

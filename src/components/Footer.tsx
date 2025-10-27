@@ -12,8 +12,8 @@ export default function Footer() {
         <div>
           <h2 className="text-lg font-semibold mb-3">Metro Pest Management</h2>
           <p className="text-sm text-emerald-100 leading-relaxed">
-            Your trusted partner in eco-friendly pest control.
-            We protect your home and business with safe, effective, and reliable solutions.
+            Your trusted partner in pest control.
+            We protect your hotels, hospitals and industries with safe, effective, and reliable solutions.
           </p>
         </div>
 

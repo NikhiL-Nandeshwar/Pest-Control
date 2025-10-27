@@ -47,8 +47,8 @@ export default function AboutSection() {
               >
                 <Home className="text-emerald-700 w-8 h-8" />
                 <div>
-                  <h4 className="font-semibold text-emerald-900">Residential</h4>
-                  <p className="text-emerald-700 text-sm">Safe pest control for homes and apartments.</p>
+                  <h4 className="font-semibold text-emerald-900">Hospitals</h4>
+                  <p className="text-emerald-700 text-sm">Safe pest control for hospitals and healthcare facilities.</p>
                 </div>
               </motion.div>
 
@@ -58,7 +58,7 @@ export default function AboutSection() {
               >
                 <Hotel className="text-emerald-700 w-8 h-8" />
                 <div>
-                  <h4 className="font-semibold text-emerald-900">Hotels & Hospitality</h4>
+                  <h4 className="font-semibold text-emerald-900">Hotels</h4>
                   <p className="text-emerald-700 text-sm">Odorless, discreet services for premium spaces.</p>
                 </div>
               </motion.div>

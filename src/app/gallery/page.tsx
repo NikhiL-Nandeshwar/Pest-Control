@@ -7,10 +7,10 @@ import { Card, CardContent } from "@/components/ui/card";
 const galleryImages = [
   { src: "/gallery/pest-spray.webp", alt: "Technician spraying pest control" },
   { src: "/gallery/termite-treatment.webp", alt: "Termite control service" },
-  { src: "/gallery/home-sanitization.webp", alt: "Home sanitization service" },
+  { src: "/gallery/home-sanitization.webp", alt: "Sanitization service" },
   { src: "/gallery/office-disinfection.webp", alt: "Office disinfection service" },
-  { src: "/gallery/eco.png", alt: "Eco-friendly pest control products" },
-  { src: "/gallery/equipment.webp", alt: "Professional pest control equipment" },
+  { src: "/gallery/eco.png", alt: "Env-friendly pest control products" },
+  { src: "/gallery/equipment.webp", alt: "Professional pest control equipments" },
 ];
 
 export default function GallerySection() {

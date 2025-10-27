@@ -6,12 +6,12 @@ const features = [
   {
     icon: ShieldCheck,
     title: "Safe & Certified Methods",
-    desc: "We use safe, certified and eco-friendly chemicals that are safe for kids and pets.",
+    desc: "We use safe, certified, professional chemicals that are safe for kids and pets.",
   },
   {
     icon: Leaf,
-    title: "Eco-Friendly Approach",
-    desc: "Our sustainable pest control ensures safety for your family and the environment.",
+    title: "Sustainable Approach",
+    desc: "Our professional and sustainable pest control ensures safety for your businesses and the environment.",
   },
   {
     icon: Clock,

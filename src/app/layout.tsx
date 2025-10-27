@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Pest Management Services",
-  description: "Safe and professional pest control solutions for your home and business.",
+  description: "Safe and professional pest control solutions for your hotels, hospitals and industries.",
 };
 
 export default function RootLayout({
