@@ -6,7 +6,7 @@ const features = [
   {
     icon: ShieldCheck,
     title: "Safe & Certified Methods",
-    desc: "We use government-approved, eco-friendly chemicals that are safe for kids and pets.",
+    desc: "We use safe, certified and eco-friendly chemicals that are safe for kids and pets.",
   },
   {
     icon: Leaf,
@@ -27,7 +27,7 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-24 bg-white">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold text-emerald-800">Why Choose Us</h2>
         <p className="text-emerald-700 mt-2 mb-12">

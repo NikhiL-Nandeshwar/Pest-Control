@@ -32,7 +32,7 @@ export default function Hero() {
               href="/contact"
               className="bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg"
             >
-              Book a Free Inspection Now
+              Let’s Get in Touch
             </Link>
             <Link
               href="/services"

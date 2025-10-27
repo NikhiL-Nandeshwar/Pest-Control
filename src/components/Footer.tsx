@@ -6,7 +6,7 @@ import { Facebook, Instagram, Twitter, Phone, Mail, MapPin } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-emerald-700 text-white mt-10">
+    <footer className="bg-emerald-700 text-white">
       <div className="container mx-auto px-6 py-10 grid gap-8 md:grid-cols-3">
         {/* Company Info */}
         <div>
@@ -48,12 +48,12 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <MapPin size={16} />
               <a
-                href="https://www.google.com/maps/search/Rajarampuri,+10th+Lane,+Kolhapur,+Maharashtra"
+                href="https://www.google.com/maps/search/Rajarampuri,+8th+Lane,+Kolhapur,+Maharashtra"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition"
               >
-                Rajarampuri, 10th Lane, Kolhapur, Maharashtra
+                Rajarampuri, 8th Lane, Kolhapur, Maharashtra
               </a>
             </li>
           </ul>
