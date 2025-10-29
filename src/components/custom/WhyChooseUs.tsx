@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold text-emerald-800">Why Choose Us</h2>
         <p className="text-emerald-700 mt-2 mb-12">
-          Trusted by hundreds of homes and businesses for professional pest solutions.
+          The Trusted Choice for Professional & Reliable Pest Control
         </p>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">

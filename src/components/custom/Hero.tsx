@@ -23,7 +23,7 @@ export default function Hero() {
             <span className="text-emerald-600">Pest Control Solutions</span>
           </h1>
           <p className="text-emerald-700 text-lg leading-relaxed">
-            We safeguard homes, hotels, and workplaces with expert pest control — combining
+            We safeguard hotels, hospitals and industries with expert pest control — combining
             modern technology, skilled professionals, and eco-friendly practices for lasting protection.
           </p>
 

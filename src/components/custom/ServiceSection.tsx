@@ -11,7 +11,7 @@ export default function ServicesSection() {
     },
     {
       title: "Mosquito Control",
-      description: "Keep your home safe from mosquito-borne diseases.",
+      description: "Keep your place safe from mosquito-borne diseases.",
       link: "/services/mosquito-control",
     },
     {
@@ -26,7 +26,7 @@ export default function ServicesSection() {
       <div className="container mx-auto px-6 text-center mb-12">
         <h2 className="text-3xl font-bold text-emerald-800">Our Services</h2>
         <p className="text-emerald-700 mt-2">
-          Comprehensive pest control solutions for your home and business.
+          Comprehensive pest control solutions for your hotels, hospitals and businesses.
         </p>
       </div>
       <div className="container mx-auto px-6 grid gap-6 md:grid-cols-3">
