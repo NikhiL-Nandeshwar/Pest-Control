@@ -10,7 +10,7 @@ export default function Hero() {
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 bg-[url('/patterns/leaf-pattern.svg')] opacity-5 bg-repeat"></div>
 
-      <div className="container relative mx-auto px-6 py-28 md:flex md:items-center md:justify-between">
+      <div className="container relative mx-auto px-6 py-24 md:flex md:items-center md:justify-between">
         {/* Text Content */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -19,21 +19,22 @@ export default function Hero() {
           className="md:max-w-xl space-y-6 z-10"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-emerald-900 leading-tight">
-            Safe. Effective.<br /> Reliable. <br />
-            <span className="text-emerald-600">Pest Control Solutions</span>
+            Pests Out.<br /> Peace In. <br />
+            <span className="text-emerald-600">Trusted Protection for Every Space</span>
           </h1>
           <p className="text-emerald-700 text-lg leading-relaxed">
             We safeguard hotels, hospitals and industries with expert pest control — combining
-            modern technology, skilled professionals, and eco-friendly practices for lasting protection.
+            modern technology, skilled professionals, and reliable practices for lasting protection.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 pt-2 sm:items-center">
+          <div className="flex flex-col sm:flex-row gap-4 pt-4 sm:items-center sm:justify-start justify-center text-center">
             <Link
               href="/contact"
-              className="bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg"
+              className="bg-emerald-700 hover:bg-emerald-800 text-white px-6 sm:px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto"
             >
               Let’s Get in Touch
             </Link>
+
             <Link
               href="/services"
               className="text-emerald-700 font-medium hover:text-emerald-900 underline-offset-4 hover:underline transition"
@@ -41,6 +42,7 @@ export default function Hero() {
               Explore Our Services →
             </Link>
           </div>
+
         </motion.div>
 
         {/* Image Section */}
@@ -52,11 +54,11 @@ export default function Hero() {
         >
           <div className="absolute inset-0 bg-emerald-600/20 rounded-full blur-3xl w-96 h-96 mx-auto"></div>
           <Image
-            src="/gallery/eco-friendly.jpg"
+            src="/gallery/pest.jpg"
             alt="Professional pest control illustration"
-            width={650}
-            height={650}
-            className="relative z-10 drop-shadow-2xl"
+            width={440}
+            height={450}
+            className="relative z-10 drop-shadow-2xl mr-20 mt-3"
             priority
           />
         </motion.div>

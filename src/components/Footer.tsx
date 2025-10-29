@@ -41,8 +41,8 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Mail size={16} />
-              <a href="mailto:admin@metropestmanagement.in" className="hover:text-white transition">
-                admin@metropestmanagement.in
+              <a href="mailto:admin@metropests.in" className="hover:text-white transition">
+                admin@metropests.in
               </a>
             </li>
             <li className="flex items-center gap-2">
@@ -69,7 +69,7 @@ export default function Footer() {
       <Separator className="bg-emerald-600" />
       
       <div className="text-center pt-2 pb-0.5 text-sm text-emerald-100">
-        © {new Date().getFullYear()} Metro Pest Management. All rights reserved.
+        © {new Date().getFullYear()} Metro Pest Management Services. All rights reserved.
       </div>
 
       <div className="text-center pb-2 text-sm text-emerald-100">

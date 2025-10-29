@@ -9,7 +9,7 @@ const galleryImages = [
   { src: "/gallery/termite-treatment.webp", alt: "Termite control service" },
   { src: "/gallery/home-sanitization.webp", alt: "Sanitization service" },
   { src: "/gallery/office-disinfection.webp", alt: "Office disinfection service" },
-  { src: "/gallery/eco.png", alt: "Env-friendly pest control products" },
+  { src: "/gallery/eco.png", alt: "Environment-friendly products" },
   { src: "/gallery/equipment.webp", alt: "Professional pest control equipments" },
 ];
 

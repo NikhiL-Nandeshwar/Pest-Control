@@ -47,7 +47,7 @@ export default function ContactPage() {
                 <Mail className="text-emerald-600" />
                 <div>
                   <h4 className="font-semibold text-emerald-700">Email</h4>
-                  <p className="text-gray-600">admin@metropestmanagement.in</p>
+                  <p className="text-gray-600">admin@metropests.in</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">

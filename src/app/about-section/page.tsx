@@ -59,7 +59,7 @@ export default function AboutSection() {
                 <Hotel className="text-emerald-700 w-8 h-8" />
                 <div>
                   <h4 className="font-semibold text-emerald-900">Hotels</h4>
-                  <p className="text-emerald-700 text-sm">Odorless, discreet services for premium spaces.</p>
+                  <p className="text-emerald-700 text-sm">Discreet, odorless pest control to keep your guests comfortable.</p>
                 </div>
               </motion.div>
 
