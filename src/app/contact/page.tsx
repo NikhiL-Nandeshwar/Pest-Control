@@ -62,7 +62,7 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-semibold text-emerald-700">Address</h4>
                   <p className="text-gray-600">
-                    Metro Pest Management, Rajarampuri 8th Lane, Kolhapur, Maharashtra
+                    Metro Pest Management Services, Rajarampuri 8th Lane, Kolhapur, Maharashtra
                   </p>
                 </div>
               </div>

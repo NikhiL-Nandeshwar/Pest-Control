@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Pest Management Services",
+  title: "Metro Pest Management Services",
   description: "Safe and professional pest control solutions for your hotels, hospitals and industries.",
 };
 

@@ -22,7 +22,7 @@ export default function AboutSection() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-emerald-800 mb-6 leading-tight">
-              About <span className="text-emerald-600">Metro Pest Management</span>
+              Metro <span className="text-emerald-600">Pest Management Services</span>
             </h2>
 
             <p className="text-emerald-700 text-lg mb-6 leading-relaxed">

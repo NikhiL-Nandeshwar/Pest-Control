@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container mx-auto px-6 py-10 grid gap-8 md:grid-cols-3">
         {/* Company Info */}
         <div>
-          <h2 className="text-lg font-semibold mb-3">Metro Pest Management</h2>
+          <h2 className="text-lg font-semibold mb-3">Metro Pest Management Services</h2>
           <p className="text-sm text-emerald-100 leading-relaxed">
             Your trusted partner in pest control.
             We protect your hotels, hospitals and industries with safe, effective, and reliable solutions.
