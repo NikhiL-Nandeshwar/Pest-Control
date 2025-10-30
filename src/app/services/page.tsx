@@ -10,40 +10,40 @@ const services = [
   {
     title: "Termite Control",
     description:
-      "Protect the foundation, furniture, and wooden structures from costly termite damage. Our team uses advanced, eco-safe solutions that eliminate termite colonies and prevent recurrence.",
+      "Protect the foundation, furniture, and wooden structures from costly termite damage. Our advanced, eco-safe solutions eliminate termite colonies and prevent recurrence.\n\nWe also provide preventive soil and wood treatment plans to stop future infestations before they start.",
     image: "/services/termite.jpg",
   },
   {
     title: "Mosquito Control",
     description:
-      "Say goodbye to mosquito bites and diseases like dengue, malaria, and chikungunya. We provide long-lasting treatment using WHO-approved repellents and safe indoor applications.",
+      "Say goodbye to mosquito bites and diseases like dengue and malaria. Our treatment ensures clean surroundings and breaks breeding cycles effectively.\n\nWe focus on drain, garden, and moisture-prone areas to block mosquito breeding and ensure long-lasting results.",
     image: "/services/mosquito.png",
   },
   {
     title: "Rodent Control",
     description:
-      "Our rodent control service ensures a safe, clean, and rodent-free environment. We identify entry points, deploy traps and repellents, and provide prevention strategies.",
+      "Ensure a safe, hygienic, and rodent-free environment. We identify entry points, deploy smart traps, and provide ongoing prevention strategies.\n\nOur technicians use humane and eco-smart baiting systems to ensure complete rodent management without disrupting your workspace.",
     image: "/services/rodent-control.jpg",
   },
   {
     title: "Cockroach & Ant Control",
     description:
-      "A targeted gel and spray treatment to remove cockroaches and ants without odor or mess — safe for children, pets, and kitchens.",
+      "Targeted gel and spray treatments remove cockroaches and ants without odor or mess. Safe for children, pets, and food spaces.\n\nOur approach also includes sanitation guidance and barrier protection to prevent reinfestation and maintain lasting cleanliness.",
     image: "/services/cockroach.webp",
   },
   {
     title: "Bed Bug Treatment",
     description:
-      "We use heat and non-toxic sprays to eradicate bed bugs from mattresses, sofas, and fabrics, ensuring a peaceful, itch-free sleep.",
+      "We use heat and non-toxic sprays to eradicate bed bugs from mattresses, sofas, and fabrics. Enjoy a peaceful, itch-free sleep and complete comfort.\n\nWe also provide follow-up inspections to ensure zero bed bug recurrence and full peace of mind.",
     image: "/services/bed-bug.webp",
   },
-]
+];
 
 export default function ServicesPage() {
   return (
     <section className="bg-gradient-to-b from-white via-emerald-50 to-white overflow-hidden">
       {/* Hero Section */}
-      <div className="relative py-24 text-center">
+      <div className="relative py-20 text-center">
         <div className="container mx-auto px-6">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -76,9 +76,8 @@ export default function ServicesPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className={`grid lg:grid-cols-2 gap-10 items-center ${
-              i % 2 === 1 ? "lg:flex-row-reverse" : ""
-            }`}
+            className={`grid lg:grid-cols-2 gap-10 items-center ${i % 2 === 1 ? "lg:flex-row-reverse" : ""
+              }`}
           >
             {/* Image */}
             <div className="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
@@ -93,20 +92,21 @@ export default function ServicesPage() {
             </div>
 
             {/* Text */}
-            <div className={`${i % 2 === 1 ? "lg:pl-10" : "lg:pr-10"}`}>
+            <div className='lg:pl-8'>
               <h2 className="text-3xl font-bold text-emerald-800 mb-4">
                 {service.title}
               </h2>
-              <p className="text-emerald-700 text-lg mb-6 leading-relaxed">
+              <p className="text-emerald-700 whitespace-pre-line text-lg mb-6 leading-relaxed">
                 {service.description}
               </p>
-              <Link
+              {/* <Link
                 href="#"
                 className="inline-flex items-center gap-2 text-emerald-700 hover:text-emerald-900 font-semibold group"
               >
                 Learn more
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              </Link> */}
+              <div className="w-12 h-1 bg-emerald-500 rounded-full mt-4 mx-auto lg:mx-0"></div>
             </div>
           </motion.div>
         ))}
