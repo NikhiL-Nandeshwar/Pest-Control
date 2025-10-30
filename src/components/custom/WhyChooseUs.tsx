@@ -15,8 +15,8 @@ const features = [
   },
   {
     icon: Clock,
-    title: "Quick & Reliable Service",
-    desc: "Get same-day inspection and fast pest removal by trained professionals.",
+    title: "Efficient & Reliable Service",
+    desc: "Reliable, Swift coordination and expert pest management you can count on",
   },
   {
     icon: Award,
