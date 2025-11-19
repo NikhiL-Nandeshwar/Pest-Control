@@ -7,7 +7,7 @@ import { Facebook, Instagram, Twitter, Phone, Mail, MapPin } from "lucide-react"
 export default function Footer() {
   return (
     <footer className="bg-emerald-700 text-white">
-      <div className="container mx-auto px-6 py-10 grid gap-8 md:grid-cols-3">
+      <div className="container mx-auto px-6 py-10 grid gap-8 md:grid-cols-3 items-start">
         {/* Company Info */}
         <div>
           <h2 className="text-lg font-semibold mb-3">Metro Pest Management Services</h2>
@@ -67,7 +67,7 @@ export default function Footer() {
       </div>
 
       <Separator className="bg-emerald-600" />
-      
+
       <div className="text-center pt-2 pb-0.5 text-sm text-emerald-100">
         © {new Date().getFullYear()} Metro Pest Management Services. All rights reserved.
       </div>

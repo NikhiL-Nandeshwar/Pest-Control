@@ -11,7 +11,7 @@ const services = [
     title: "Termite Control",
     description:
       "Protect the foundation, furniture, and wooden structures from costly termite damage. Our advanced, eco-safe solutions eliminate termite colonies and prevent recurrence.\n\nWe also provide preventive soil and wood treatment plans to stop future infestations before they start.",
-    image: "/services/termite.jpg",
+    image: "/services/termite.webp",
   },
   {
     title: "Mosquito Control",
@@ -35,7 +35,7 @@ const services = [
     title: "Bed Bug Treatment",
     description:
       "We use heat and non-toxic sprays to eradicate bed bugs from mattresses, sofas, and fabrics. Enjoy a peaceful, itch-free sleep and complete comfort.\n\nWe also provide follow-up inspections to ensure zero bed bug recurrence and full peace of mind.",
-    image: "/services/bed-bug.webp",
+    image: "/services/bed-bug.jpg",
   },
 ];
 
