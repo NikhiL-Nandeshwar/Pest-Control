@@ -39,17 +39,28 @@ export default function ContactPage() {
       .then(() => {
         toast.success("Message sent successfully!", {
           style: {
-            border: "2px solid #3B82F6", // Tailwind blue-500 HEX
-            background: "white",
-            color: "#1E3A8A", // navy blue text for contrast
+            background: "#3B82F6",
+            color: "white",
+            borderRadius: "10px",
+            boxShadow: "0 4px 14px rgba(0,0,0,0.18)",
           },
+          closeButton: true,
         });
 
         reset();
       })
       .catch((error) => {
         console.error(error);
-        toast.error("Failed to send message!");
+        toast.error("Failed to send message, try later!", {
+          style: {
+            background: "#DC2626",
+            color: "white",
+            borderRadius: "10px",
+            boxShadow: "0 4px 14px rgba(0,0,0,0.18)",
+          },
+          closeButton: true,
+        });
+
       });
   };
 

@@ -34,10 +34,36 @@ body {
 
 /* Improve toast visibility */
 [data-sonner-toaster] [data-sonner-toast] {
-  border: 2px solid rgba(0, 0, 0, 0.12); /* subtle border */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18); /* stronger visibility */
-  backdrop-filter: blur(6px); /* optional: soft glass look */
-  border-radius: 10px; /* smoother corners */
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  /* subtle border */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  /* stronger visibility */
+  backdrop-filter: blur(6px);
+  /* optional: soft glass look */
+  border-radius: 10px;
+  /* smoother corners */
 }
 
+/* Success toast close button */
+[data-sonner-toast][data-type="success"] button {
+  color: #374151 !important;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  border-radius: 50% !important;
+  padding: 2px !important;
+}
 
+[data-sonner-toast][data-type="success"] button:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Error toast close button */
+[data-sonner-toast][data-type="error"] button {
+  color: #374151 !important;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  border-radius: 50% !important;
+  padding: 2px !important;
+}
+
+[data-sonner-toast][data-type="error"] button:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
