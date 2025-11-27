@@ -7,13 +7,50 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin } from "lucide-react";
+import emailjs from "emailjs-com";
+import { toast } from "sonner";
+
+type ContactFormValues = {
+  name: string;
+  email: string;
+  message: string;
+};
 
 export default function ContactPage() {
-  const { register, handleSubmit, reset } = useForm();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm<ContactFormValues>();
 
-  const onSubmit = (data: any) => {
-    console.log("Form Data:", data);
-    reset();
+  const onSubmit = (data: ContactFormValues) => {
+    return emailjs
+      .send(
+        "service_hjiiwtv",
+        "template_pnd7i3i",
+        {
+          name: data.name,
+          email: data.email,
+          message: data.message,
+        },
+        "VwPZhFEVl5zteASYS"
+      )
+      .then(() => {
+        toast.success("Message sent successfully!", {
+          style: {
+            border: "2px solid #3B82F6", // Tailwind blue-500 HEX
+            background: "white",
+            color: "#1E3A8A", // navy blue text for contrast
+          },
+        });
+
+        reset();
+      })
+      .catch((error) => {
+        console.error(error);
+        toast.error("Failed to send message!");
+      });
   };
 
   return (
@@ -62,7 +99,8 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-semibold text-emerald-700">Address</h4>
                   <p className="text-gray-600">
-                    Metro Pest Management Services, Rajarampuri 8th Lane, Kolhapur, Maharashtra
+                    Metro Pest Management Services, Rajarampuri 8th Lane,
+                    Kolhapur, Maharashtra
                   </p>
                 </div>
               </div>
@@ -78,25 +116,68 @@ export default function ContactPage() {
           transition={{ duration: 0.8 }}
           className="bg-white/80 backdrop-blur-md shadow-xl rounded-2xl p-8 space-y-4"
         >
+          {/* Name */}
           <div>
             <label className="text-emerald-700 font-medium">Name</label>
-            <Input {...register("name")} placeholder="Your Name" className="mt-1" />
+            <Input
+              {...register("name", { required: "Name is required" })}
+              placeholder="Your Name"
+              className="mt-1"
+            />
+            {errors.name && (
+              <p className="mt-1 text-sm text-red-600">
+                {errors.name.message}
+              </p>
+            )}
           </div>
+
+          {/* Email */}
           <div>
             <label className="text-emerald-700 font-medium">Email</label>
-            <Input {...register("email")} placeholder="you@example.com" className="mt-1" />
+            <Input
+              {...register("email", {
+                required: "Email is required",
+                pattern: {
+                  value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                  message: "Please enter a valid email address",
+                },
+              })}
+              placeholder="you@example.com"
+              className="mt-1"
+            />
+            {errors.email && (
+              <p className="mt-1 text-sm text-red-600">
+                {errors.email.message}
+              </p>
+            )}
           </div>
+
+          {/* Message */}
           <div>
             <label className="text-emerald-700 font-medium">Message</label>
-            <Textarea {...register("message")} placeholder="Type your message..." className="mt-1" />
+            <Textarea
+              {...register("message", { required: "Message is required" })}
+              placeholder="Type your message..."
+              className="mt-1"
+            />
+            {errors.message && (
+              <p className="mt-1 text-sm text-red-600">
+                {errors.message.message}
+              </p>
+            )}
           </div>
+
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Button type="submit" className="w-full mt-2 bg-emerald-700 hover:bg-emerald-800 hover:cursor-pointer text-white font-semibold py-2">
-              Send Message
+            <Button
+              type="submit"
+              className="w-full mt-2 bg-emerald-700 hover:bg-emerald-800 hover:cursor-pointer text-white font-semibold py-2"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
           </motion.div>
         </motion.form>

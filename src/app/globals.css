@@ -32,3 +32,12 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+/* Improve toast visibility */
+[data-sonner-toaster] [data-sonner-toast] {
+  border: 2px solid rgba(0, 0, 0, 0.12); /* subtle border */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18); /* stronger visibility */
+  backdrop-filter: blur(6px); /* optional: soft glass look */
+  border-radius: 10px; /* smoother corners */
+}
+
+

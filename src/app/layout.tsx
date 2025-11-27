@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={cn(inter.className, "min-h-screen flex flex-col")}>
         <Navbar />
         <main className="flex-1">{children}</main>
+        <Toaster position="top-right" richColors closeButton />
         <Footer />
       </body>
     </html>
