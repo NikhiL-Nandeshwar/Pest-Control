@@ -58,7 +58,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <MapPin className="text-emerald-600" />
+                <MapPin className="text-emerald-600" size={38} />
                 <div>
                   <h4 className="font-semibold text-emerald-700">Address</h4>
                   <p className="text-gray-600">
