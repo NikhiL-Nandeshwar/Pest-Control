@@ -75,12 +75,12 @@ export default function Footer() {
       <div className="text-center pb-2 text-sm text-emerald-100">
         Managed by{" "}
         <a
-          href="https://nexspire.vercel.app/"
+          href="https://nexspiretechnologies.in"
           target="_blank"
           rel="noopener noreferrer"
           className="underline hover:text-white transition"
         >
-          NexSpire Technologies
+          Nexspire Technologies
         </a>
       </div>
     </footer>
